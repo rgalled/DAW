@@ -1,5 +1,4 @@
 Vagrant.configure("2") do |config|
-  
   config.vm.define "venus" do |venus|
     venus.vm.box = "debian/bullseye64"
     venus.vm.hostname = "venus.sistema.test"
