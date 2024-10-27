@@ -1,0 +1,18 @@
+$ttl 38400 ;
+tierra.sistema.test IN SOA dns0.tierra.sistema.test admin.tierra.sistema.test (
+  2016101401 
+  604800 
+  86400 
+  2419200 
+  7200 ) 
+tierra.sistema.test IN NS dns0.tierra.sistema.test 
+tierra.sistema.test IN A 192.168.57.103 
+venus.sistema.test IN A 192.168.57.102
+marte.sistema.test IN A 192.168.57.104
+
+ns1.sistema.test IN CNAME tierra.sistema.test
+ns2.sistema.test IN CNAME venus.sistema.test
+mail.sistema.test IN CNAME marte.sistema.test
+
+sistema.test IN MX 10 marte.sistema.test
+
